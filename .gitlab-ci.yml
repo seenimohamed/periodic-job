@@ -1,0 +1,4 @@
+test:
+ script:
+ - btc=$(curl https://min-api.cryptocompare.com/data/price?fsym=BTC\&tsyms=CAD)
+ - curl -i -X POST https://putsreq.com/wkDdMQWhaOyalisaIe49 — data ‘price=CA$ ‘“${btc//[0-9\.]/}”
